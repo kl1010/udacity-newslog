@@ -14,5 +14,5 @@ Charts are made using google charts you can read more about it at <https://devel
 
 Charts data are not dynamic right now, I do plan to make them so. 
 
-## Working Example
+## Screenshot of Working Demo
 ![Demo](https://github.com/kl1010/udacity-newslog/blob/master/img/demo.png?raw=true)
