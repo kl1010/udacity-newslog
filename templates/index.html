@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<div class="w3-center">
+    <p class="kp-3d"> KAPIL LAMICHHANE </p>
+</div>
+    <div class="w3-container">
+        <div class="w3-container w3-card w3-margin">
+            <h3 class="w3-green w3-padding "><i class="fa fa-newspaper-o" aria-hidden="true"></i> The most popular three articles of all time</h3>
+            <ul class="w3-ul w3-hoverable w3-padding">
+                {% for item in all_articles %}
+                    <li>"{{ item[1] }}"<span> -  {{ item[0] }} views</span></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="w3-container w3-card w3-margin">
+            <h3 class="w3-green w3-padding"><i class="fa fa-user-circle" aria-hidden="true"></i> The most popular authors of all time</h3>
+            <ul class="w3-ul w3-hoverable w3-padding">
+                {% for item in all_authors %}
+                    <li >{{ item[0] }}<span> -  {{ item[1] }} views</span></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class=" w3-container w3-card w3-margin">
+            <h3 class="w3-green w3-padding"><i class="fa fa-exclamation" aria-hidden="true"></i> Most Error Reported day</h3>
+            <ul class="w3-ul w3-hoverable w3-padding">
+                <li> {{ all_errors[0] }}<span> - {{ all_errors[1] }}% errors</span> </li>
+            </ul>
+        </div>
+    </div>
+    <div class = "w3-container w3-card w3-margin">
+        <div class="w3-half" id = 'chart_div1'>
+
+        </div>
+        <div class="w3-half" id = 'chart_div2'>
+
+        </div>
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../static/js/index.js"></script>
+</body>
+</html>
