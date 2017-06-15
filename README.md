@@ -6,8 +6,8 @@ You can create a folder on the vagrant directory and run ```newslog.py``` from `
 ```python
 python newslog.py
 ```
-Then you should be able to go to ```https://localhost:8080``` to view the website.
-Alternatively, I will be hosting one at ```http://104.236.85.232:8080/``` as a reminder I might move that.
+Then you should be able to go to <https://localhost:8080> to view the website.
+Alternatively, I will be hosting one at <http://104.236.85.232:8080/> as a reminder I might move that.
 
 ## About the charts
 Charts are made using google charts you can read more about it at <https://developers.google.com/chart/>
